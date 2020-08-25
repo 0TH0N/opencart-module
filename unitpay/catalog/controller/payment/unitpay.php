@@ -42,7 +42,6 @@ class ControllerPaymentUnitpay extends Controller {
                 'currency'      => $order_info['currency_code'],
                 'account'       => $data['inv_id'],
                 'desc'          => $data['inv_desc'],
-                'unitpay_login' => $data['unitpay_login'],
                 'resultUrl'     => $data['success_url'],
                 'cashItems'     => $this->getOrderItems($order_info['currency_code'], $order_info['currency_value']),
                 'customerEmail' => $order_info['email'],
